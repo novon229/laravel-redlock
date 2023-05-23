@@ -1,6 +1,6 @@
 <?php
 
-namespace DealerInspire\RedLock\Facades;
+namespace Novon229\RedLock\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
