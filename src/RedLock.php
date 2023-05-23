@@ -1,6 +1,6 @@
 <?php
 
-namespace DealerInspire\RedLock;
+namespace Novon229\RedLock;
 
 use Predis\Client as Redis;
 use Illuminate\Support\Facades\App;
