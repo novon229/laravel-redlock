@@ -22,10 +22,10 @@ class QueueWithoutOverlapTest extends TestCase
         $queue = Mockery::mock();
         $queue->shouldReceive('push')->with($job)->once();
 
-        $lock = new Lock(new \DealerInspire\RedLock\RedLock([]), 2, 'DealerInspire\RedLock\Traits\QueueWithoutOverlapJob::1000:', '1111', 2);
+        $lock = new Lock(new \Novon229\RedLock\RedLock([]), 2, 'Novon229\RedLock\Traits\QueueWithoutOverlapJob::1000:', '1111', 2);
 
         RedLock::shouldReceive('lock')
-            ->with("DealerInspire\RedLock\Traits\QueueWithoutOverlapJob::1000:", 1000000)
+            ->with("Novon229\RedLock\Traits\QueueWithoutOverlapJob::1000:", 1000000)
             ->twice()
             ->andReturn($lock);
         RedLock::shouldReceive('unlock')
@@ -47,7 +47,7 @@ class QueueWithoutOverlapTest extends TestCase
         $queue = Mockery::mock();
 
         RedLock::shouldReceive('lock')
-            ->with("DealerInspire\RedLock\Traits\QueueWithoutOverlapJob::1000:", 1000000)
+            ->with("Novon229\RedLock\Traits\QueueWithoutOverlapJob::1000:", 1000000)
             ->once()
             ->andReturn(null);
 
@@ -63,10 +63,10 @@ class QueueWithoutOverlapTest extends TestCase
         $queue = Mockery::mock();
         $queue->shouldReceive('push')->with($job)->once();
 
-        $lock = new Lock(new \DealerInspire\RedLock\RedLock([]), 2, 'DealerInspire\RedLock\Traits\QueueWithoutOverlapJob::1000:', '1111', 2);
+        $lock = new Lock(new \Novon229\RedLock\RedLock([]), 2, 'Novon229\RedLock\Traits\QueueWithoutOverlapJob::1000:', '1111', 2);
 
         RedLock::shouldReceive('lock')
-            ->with("DealerInspire\RedLock\Traits\QueueWithoutOverlapJob::1000:", 1000000)
+            ->with("Novon229\RedLock\Traits\QueueWithoutOverlapJob::1000:", 1000000)
             ->twice()
             ->andReturn(
                 $lock,
@@ -79,7 +79,7 @@ class QueueWithoutOverlapTest extends TestCase
 
         $job->queue($queue, $job);
 
-        $this->expectException('DealerInspire\RedLock\Exceptions\QueueWithoutOverlapRefreshException');
+        $this->expectException('Novon229\RedLock\Exceptions\QueueWithoutOverlapRefreshException');
 
         $job->handle();
     }
@@ -91,10 +91,10 @@ class QueueWithoutOverlapTest extends TestCase
         $queue = Mockery::mock();
         $queue->shouldReceive('push')->with($job)->once();
 
-        $lock = new Lock(new \DealerInspire\RedLock\RedLock([]), 2, 'DealerInspire\RedLock\Traits\QueueWithoutOverlapJobDefaultLockTime::', '1111', 2);
+        $lock = new Lock(new \Novon229\RedLock\RedLock([]), 2, 'Novon229\RedLock\Traits\QueueWithoutOverlapJobDefaultLockTime::', '1111', 2);
 
         RedLock::shouldReceive('lock')
-            ->with("DealerInspire\RedLock\Traits\QueueWithoutOverlapJobDefaultLockTime::", 300000)
+            ->with("Novon229\RedLock\Traits\QueueWithoutOverlapJobDefaultLockTime::", 300000)
             ->twice()
             ->andReturn($lock);
         RedLock::shouldReceive('unlock')
