@@ -1,11 +1,11 @@
 <?php
 
-namespace DealerInspire\RedLock\Traits;
+namespace Novon229\RedLock\Traits;
 
-use DealerInspire\RedLock\Facades\RedLock;
-use DealerInspire\RedLock\Lock;
+use Novon229\RedLock\Facades\RedLock;
+use Novon229\RedLock\Lock;
 use Illuminate\Database\Eloquent\Model;
-use DealerInspire\RedLock\Exceptions\QueueWithoutOverlapRefreshException;
+use Novon229\RedLock\Exceptions\QueueWithoutOverlapRefreshException;
 
 trait QueueWithoutOverlap
 {
