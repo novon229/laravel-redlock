@@ -4,7 +4,7 @@
  */
 declare(strict_types=1);
 
-namespace DealerInspire\RedLock;
+namespace Novon229\RedLock;
 
 /**
  * Class Lock
