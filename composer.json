@@ -1,5 +1,5 @@
 {
-    "name": "dealerinspire/laravel-redlock",
+    "name": "novon229/laravel-redlock",
     "description": "Redis distributed locks for laravel",
     "license": "MIT",
     "keywords": ["redlock", "laravel redis lock", "redis lock"],
