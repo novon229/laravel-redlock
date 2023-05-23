@@ -19,6 +19,7 @@
       {
           "name": "Brandon",
           "email": "novon229@gmail.com"
+      }
     ],
     "require": {
       "php": ">=8.0.0",
