@@ -20,6 +20,6 @@ class RedLockFacadeTest extends TestCase
 
     public function testRoot()
     {
-        $this->assertTrue(RedLock::getFacadeRoot() instanceof \DealerInspire\RedLock\RedLock);
+        $this->assertTrue(RedLock::getFacadeRoot() instanceof \Novon229\RedLock\RedLock);
     }
 }
