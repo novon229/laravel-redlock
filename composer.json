@@ -1,6 +1,6 @@
 {
-    "name": "dealerinspire/laravel-redlock",
-    "description": "Redis distributed locks for laravel",
+    "name": "novon229/laravel-redlock",
+    "description": "Redis distributed locks for laravel - tweaked for laravel 10",
     "license": "MIT",
     "keywords": ["redlock", "laravel redis lock", "redis lock"],
     "authors": [
@@ -15,7 +15,10 @@
       {
         "name": "Potsky",
         "email": "potsky@me.com"
-      }
+      },
+      {
+          "name": "Brandon",
+          "email": "novon229@gmail.com
     ],
     "require": {
       "php": ">=8.0.0",
@@ -30,7 +33,7 @@
     },
     "autoload": {
       "psr-4": {
-        "DealerInspire\\RedLock\\": "src/"
+        "Novon229\\RedLock\\": "src/"
       }
     },
     "autoload-dev": {
@@ -41,7 +44,7 @@
     "extra": {
       "laravel": {
         "providers": [
-          "DealerInspire\\RedLock\\RedLockServiceProvider"
+          "Novon229\\RedLock\\RedLockServiceProvider"
         ]
       }
     },
