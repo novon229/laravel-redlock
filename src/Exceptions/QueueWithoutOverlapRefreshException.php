@@ -1,6 +1,6 @@
 <?php
 
-namespace DealerInspire\RedLock\Exceptions;
+namespace Novon229\RedLock\Exceptions;
 
 class QueueWithoutOverlapRefreshException extends \Exception
 {
