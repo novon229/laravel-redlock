@@ -1,9 +1,9 @@
 <?php
 
-namespace DealerInspire\RedLock;
+namespace Novon229\RedLock;
 
 use Illuminate\Support\ServiceProvider;
-use DealerInspire\RedLock\RedLock;
+use Novon229\RedLock\RedLock;
 
 class RedLockServiceProvider extends ServiceProvider{
     /**
