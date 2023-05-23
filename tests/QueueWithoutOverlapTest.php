@@ -1,9 +1,9 @@
 <?php
 
-namespace DealerInspire\RedLock\Traits;
+namespace Novon229\RedLock\Traits;
 
-use DealerInspire\RedLock\Facades\RedLock;
-use DealerInspire\RedLock\Lock;
+use Novon229\RedLock\Facades\RedLock;
+use Novon229\RedLock\Lock;
 use Mockery;
 use TestCase;
 
