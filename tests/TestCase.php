@@ -7,6 +7,6 @@ class TestCase extends Base
 {
     protected function getPackageProviders($app)
     {
-        return ['DealerInspire\\RedLock\\RedLockServiceProvider'];
+        return ['Novon229\\RedLock\\RedLockServiceProvider'];
     }
 }
